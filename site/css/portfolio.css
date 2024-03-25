@@ -52,6 +52,9 @@ p {
 }
 
 .skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
@@ -107,4 +110,49 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.projects,
+#Hereproject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttton {
+  width: 16%;
+  height: 25px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .desktopimg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
 }
