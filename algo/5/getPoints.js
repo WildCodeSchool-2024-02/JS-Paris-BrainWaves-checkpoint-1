@@ -13,6 +13,16 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 
 function getPoints(results) {
   // Your code here !
+  let score = 0;
+  for (let i = 0; i < results.length; i++) {
+    if (results[i][0] > results[i][2]) {
+      score += 3;
+    }
+    else if (results[i][0] = results[i][2]) {
+      score += 1;
+    }
+  }
+  return score;
 }
 
 module.exports = getPoints;
