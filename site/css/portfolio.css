@@ -116,6 +116,10 @@ p {
   justify-content: center;
 }
 
+.disabled{
+  opacity: 50%;
+}
+
 @media screen and (min-width : 700px) {
   nav{
     display: flex;
@@ -141,6 +145,14 @@ p {
     justify-content: center;
     align-items: center;
   }
+
+  .projects > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
 
 }
 
