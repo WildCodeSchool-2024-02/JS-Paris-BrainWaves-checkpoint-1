@@ -8,6 +8,11 @@ thirdAngle(20, 80) doit retourner 80
 
 function thirdAngle(a, b) {
   // Your code here !
+  let sum = 180 - a - b
+//                          JE ME SUIS AIDé DE CHATGPT ... :'(
+  return sum
 }
+
+
 
 module.exports = thirdAngle;
