@@ -21,4 +21,19 @@ nameButton.addEventListener("click", () => {
         text.style.color = "#750ff7"
     for (let link of links)
         link.style.color = "#750ff7"
-})
+    }
+)
+
+
+//Change list of skills
+const frontButton = document.querySelector(".change-front-skills") 
+const frontList = document.querySelector("#front-dev-tools")
+
+frontButton.addEventListener("click", () => {
+    frontList.innerHTML = `<li>VSCode</li>
+    <li>GitHub</li>
+    <li>Terminal</li>`
+    }
+)
+
+
