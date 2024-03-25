@@ -1,3 +1,7 @@
 .box {
     width: 40%;
 }
+
+.column {
+    height: 45vh;
+}
