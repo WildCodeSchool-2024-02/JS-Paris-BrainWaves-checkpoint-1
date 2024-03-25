@@ -118,17 +118,39 @@ p {
   color: var(--lightWildColor);
 }
 
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 50px 40px 1fr ;
+  width: 80%;
+  margin: 0px auto;
+}
+.projects h2{
+ grid-column: 1/4;
+ text-align: center
+}
+.projects p{
+ grid-column:2/4 ;
+}
 .projects a {
   color: var(--purple);
 }
 
+.disabled{
+  opacity: 0.5;
+}
 .box {
-  width: 25%;
+  width: 100%;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  text-align: center;
+}
+
+.box:last-child{
+  grid-column: 3/2;
 }
 
 .purple-text {
@@ -145,5 +167,12 @@ p {
   .skills{
     display: flex;
     flex-direction: column-reverse;
+  }
+  .projects{
+    display: initial;
+   
+  }
+  .box{
+    text-align: initial;
   }
 }
