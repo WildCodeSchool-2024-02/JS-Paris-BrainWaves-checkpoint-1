@@ -108,3 +108,71 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  color: black;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.top-article {
+  padding-bottom: 1rem;
+}
+
+.column {
+  width: 31.25rem;
+}
+
+.title-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-bottom: 1rem;
+  background-color: aqua;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+.desktop {
+  display: none;
+
+}
+
+.skills {
+display: flex;
+flex-direction: column;
+}
+  
+}
