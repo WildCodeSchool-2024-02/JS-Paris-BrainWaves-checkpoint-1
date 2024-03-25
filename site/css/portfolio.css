@@ -67,8 +67,7 @@ p {
 }
 
 .column {
-  display: flex;
-  
+  display: grid;
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
