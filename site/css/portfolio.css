@@ -33,6 +33,10 @@ p {
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
+@media screen and (max-width: 1177px){.desktop{
+  display: none;
+}
+}
 
 .description {
   color: var(--light);
@@ -52,9 +56,12 @@ p {
 }
 
 .skills {
+  display: flex;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  justify-content:space-around;
+  
 }
 
 .skills--title {
@@ -107,4 +114,21 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: right;
+}
+
+.middle {
+
+  display: block;
+  margin-top: 10%;
+  margin-left: 10%;
+  justify-content: center;
+  text-align: center;
+
 }
