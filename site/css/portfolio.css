@@ -11,6 +11,12 @@
   --textAlign: center;
 }
 
+#first-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -32,6 +38,8 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -49,17 +57,37 @@ p {
 
 .pink-bg {
   background-color: var(--lightWildColor);
+  margin-bottom: 2%;
+}
+
+#color-and-text{
+  border : 2px solid white;
+  border-radius: 5px;
+  background-color: var(--lightWildColor);
+  color : white;
+  padding : 1%;
 }
 
 .skills {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills-container{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+}
+
+section.column {
+  width: 100%;
 }
 
 .column {
@@ -107,4 +135,16 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width : 700px){
+
+  .desktop {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
