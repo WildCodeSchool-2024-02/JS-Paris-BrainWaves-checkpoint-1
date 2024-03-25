@@ -115,5 +115,9 @@ p {
     justify-content: space-between;
   }
 
+  .intro-banner {
+    text-align: center;
+  }
+
 
 }
