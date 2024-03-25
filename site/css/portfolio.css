@@ -27,6 +27,14 @@ p {
   display: flex;
   margin-bottom: var(--gutter);
 }
+ul.menu{
+  margin-top: 0;
+}
+section.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .desktop {
   margin: 0;
