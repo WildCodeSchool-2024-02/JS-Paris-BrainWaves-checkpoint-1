@@ -36,4 +36,18 @@ frontButton.addEventListener("click", () => {
     }
 )
 
+//Add skill to Backend skills list
+const newBackInput = document.querySelector("#new-back-skill")
+const backButton = document.querySelector("back-button")
+const backSkills = document.querySelector("#back-dev-tools")
+
+addEventListener("submit", (event) => {
+    event.preventDefault();
+    const newBackSkill = document.createElement("li");
+    newBackSkill.textContent = newBackInput.value;
+    console.log(newBackSkill)
+    backSkills.appendChild(newBackSkill);
+    }
+)
+
 
