@@ -12,7 +12,7 @@ function ThirdAngle(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
       return "Les valeurs des angles doivent être des nombres.";
   }
-  var thirdAngle = 180 - (a + b);
+  let thirdAngle = 180 - (a + b);
 
   return thirdAngle;
 }
