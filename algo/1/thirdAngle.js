@@ -7,7 +7,11 @@ thirdAngle(20, 80) doit retourner 80
 */
 
 function thirdAngle(a, b) {
-  // Your code here !
+    if (a < 0 || a > 180 || b < 0 || b > 180) {
+        return "Erreur : Les angles doivent être compris entre 0 et 180";
+    } else {
+        return 180 - a - b;
+    }
 }
 
 module.exports = thirdAngle;

@@ -26,7 +26,28 @@ const persons = [
 */
 
 function findAdults(persons) {
-  // Your code here !
+    male = [];
+    female = [];
+
+    if (Array.isArray(persons)) {
+        for (let i = 0; i < persons.length; i++) {
+            if (persons[i].age >= 18) {
+                if (persons[i].sex === "male") {
+                    male.push(persons[i]);
+                } else {
+                    female.push(persons[i]);
+                }
+            }
+        }
+        persons = [];
+        persons.push(female, male);
+        return persons;
+    } else {
+        return "Input is not an array";
+    }
+
+    console.log(male, female);
+    console.log(persons);
 }
 
 module.exports = findAdults;
