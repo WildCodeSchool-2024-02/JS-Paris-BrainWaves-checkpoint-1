@@ -74,6 +74,20 @@ button{
   margin-bottom: 1rem;
 }
 
+#btn-tools{
+  color: rgb(255, 255, 255);
+  border: solid 1px white;
+  background-color: pink;
+  font-size: 0.8rem;
+}
+
+#btn-add{
+  color: rgb(255, 255, 255);
+  border: solid 1px white;
+  background-color: pink;
+  font-size: 0.8rem;
+}
+
 .pink-bg {
   background-color: var(--lightWildColor);
 }
