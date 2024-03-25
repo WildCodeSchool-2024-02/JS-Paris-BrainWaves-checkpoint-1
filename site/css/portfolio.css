@@ -11,6 +11,32 @@
   --textAlign: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar p {
+  margin-bottom: 25px;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -52,9 +78,19 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+}
+
+.desktopskill {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 100%
 }
 
 .skills--title {
@@ -71,6 +107,8 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 50%;
+  height: 50vh;
 }
 
 .column:first-of-type {
@@ -107,4 +145,20 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recent-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
