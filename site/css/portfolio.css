@@ -23,15 +23,32 @@ p {
   padding: 0 var(--gutter);
 }
 
+ 
 .menu {
   display: flex;
-  margin-bottom: var(--gutter);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
 }
 
 .desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+.element-deleted {
+display: block;
+}
+
+@media screen and (max-width: 700px) {
+  /* Appliquez un affichage de 'none' pour masquer l'élément */
+  .element-deleted {
+    display: none;
+  }
 }
 
 .description {
