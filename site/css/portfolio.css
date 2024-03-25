@@ -49,6 +49,14 @@ p {
   padding: 0 var(--gutter);
 }
 
+#textcolor {
+  margin: 20px 20px 20px 40px;
+  padding: 10px;
+  background-color: rgb(162, 195, 255, .5);
+  border-radius: 20px;
+  color: white;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -109,6 +117,13 @@ p {
   box-shadow: var(--styledShadow);
   width: 50%;
   height: 50vh;
+}
+
+.modify-button {
+  background-color: #750ff7;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 .column:first-of-type {
