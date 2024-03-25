@@ -136,4 +136,13 @@ p {
   .desktop {
     display: none;
   }
+
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .skills--title{
+    order: 2;
+  }
 }
