@@ -15,4 +15,5 @@ button.addEventListener("click", () => {
     let userName = prompt("write your name");
     firstName.style.color="white";
     firstName.innerHTML= userName;
+    description.style.background="#750ff7"
 })
