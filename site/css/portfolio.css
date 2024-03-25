@@ -137,14 +137,40 @@ section.column {
   color: var(--purple);
 }
 
+.disabled {
+  opacity: 40%;
+}
+
+#top-boxes{
+  display: flex;
+  justify-content: space-around;
+}
+
+#bottom-boxes {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width : 700px){
 
   .desktop {
     display: none;
   }
 
-  .skills {
+  #skills-container {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  #top-boxes{
+    display: block;
+  }
+
+  #bottom-boxes{
+    display: block;
+  }
+
+  .box{
+    width: 100%;
   }
 }
