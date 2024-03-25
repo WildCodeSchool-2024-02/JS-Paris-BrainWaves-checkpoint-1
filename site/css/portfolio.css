@@ -120,4 +120,23 @@ section.container{
   .desktop img{
     display: none;
   }
+  .skills{
+    display: flex;
+    padding: 0;
+    justify-content: center;
   }
+  section.column{
+    width: 45%;  
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .column:first-of-type {
+  border-bottom-left-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+  }
+
+  .column:last-child {
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  }
+}
