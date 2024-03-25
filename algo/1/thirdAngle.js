@@ -8,6 +8,15 @@ thirdAngle(20, 80) doit retourner 80
 
 function thirdAngle(a, b) {
   // Your code here !
+  let totalAngle = 180 ;
+  let sumOfTwoAngles = a + b ;
+  if(sumOfTwoAngles > totalAngle){
+    return "it is not a triangle"
+  }else{
+    return totalAngle - sumOfTwoAngles
+  } 
+ 
 }
+console.log(thirdAngle(90,30))
 
 module.exports = thirdAngle;
