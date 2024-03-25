@@ -15,9 +15,20 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
+main{
+
+}
+.first-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 img {
   max-width: 100%;
+
 }
+
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
@@ -36,6 +47,8 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 .description {
@@ -111,4 +124,12 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+
+
+@media (max-width:700px){
+  .desktop{
+    display: none;
+  }
 }
