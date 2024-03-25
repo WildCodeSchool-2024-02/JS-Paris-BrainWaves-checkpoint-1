@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio-mobile.css" />
     <title>Checkpoint 1 Portfolio</title>
   </head>
 
@@ -22,7 +23,10 @@
     <main>
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
-      <section>
+      <section id="introduction">
+        <h1>FullStack Developer</h1>
+        <p>I code beautifull things, and i love it !</p>
+        <img src="image/avatar.svg" alt="avatar" onclick="toggleAvatar(this)" />
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
@@ -33,6 +37,7 @@
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button>Update</button>
         </section>
       </article>
 

@@ -23,9 +23,24 @@ p {
   padding: 0 var(--gutter);
 }
 
+header>nav {
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+  /* margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style-type: none; */
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .desktop {
@@ -40,11 +55,20 @@ p {
   flex-direction: column;
   align-items: center;
   padding: calc(var(--gutter) * 3.75);
+  margin-bottom: 20px;
 }
 
 .description p {
   width: 60%;
   text-align: var(--textAlign);
+}
+
+.description>button {
+  padding: 10px 20px;
+  background-color: var(--lightWildColor);
+  color: var(--light);
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 .pink-bg {
@@ -55,11 +79,16 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .column {
@@ -71,6 +100,7 @@ p {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  width: 50%;
 }
 
 .column:first-of-type {
@@ -107,4 +137,27 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (max-width: 700px){
+  .desktop {
+    display: none;
+  }
+
+  #introduction {
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    flex-direction: column-reverse;
+  }
+
+  .skills--title {
+    display: none;
+  }
+
+  .column {
+    width: 100%;
+  }
+
 }
