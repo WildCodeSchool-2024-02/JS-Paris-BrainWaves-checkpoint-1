@@ -109,6 +109,10 @@ p {
   color: var(--purple);
 }
 
+.disabled {
+  opacity: 50%;
+}
+
 @media screen and (min-width: 700px) {
   nav {
     display: flex;
@@ -116,10 +120,10 @@ p {
   }
 
   .intro-banner {
-    text-align: center;
+    text-align: var(--textAlign);
   }
 
-  .skills{
+  .skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -129,22 +133,42 @@ p {
     width: 100%;
   }
 
-  #backend-skills{
-    order:1 
+  #backend-skills {
+    order: 1
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects h2 {
+    width: 100%;
+    text-align: var(--textAlign);
+  }
+
+  .projects>p {
+    width: 100%;
+    text-align: var(--textAlign);
   }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   .desktop {
     display: none;
   }
 
-  .skills{
+  .skills {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .skills--title{
+  .skills--title {
     order: 2;
+  }
+
+  .box {
+    width: 90%
   }
 }
