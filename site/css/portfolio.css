@@ -123,12 +123,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
   }
 
   .skills--title {
     width: 100%;
+  }
 
+  #backend-skills{
+    order:1 
   }
 }
 
