@@ -1,13 +1,18 @@
+/* responsive style */
+@media (max-width: 768px) {
+  /* style for screen smaller than 768px */
+}
 body {
   font-family: "Roboto";
-  color: var(--textColor);
-}
-
+  color: var(--textColor);}
+  
 header nav ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  align-items: center;
+  margin-left: 0%;
+  /*align-items: end;*/
+
 }
 
 main {
@@ -88,7 +93,7 @@ td {
 }
 
 button {
-  display: block;
+  display: flex;
   margin: var(--gutter) auto;
   color: var(--light);
   padding: var(--gutter);

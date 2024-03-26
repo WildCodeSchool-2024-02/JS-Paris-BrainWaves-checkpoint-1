@@ -8,7 +8,7 @@
   --styledBorder: var(--borderTemplate) var(--borderColor);
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
 
-  --textAlign: center;
+  --textAlign: justify-content;
 }
 
 img {
@@ -17,16 +17,37 @@ img {
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
+  justify-content: center;
+  width: fit-content;
 }
 
 p {
-  padding: 0 var(--gutter);
+  /*padding: 0 var(--gutter);*/
+  justify-content: center;
+  width: fit-content;
+}
+header>nav {
+justify-content: space-between;
 }
 
-.menu {
-  display: flex;
-  margin-bottom: var(--gutter);
+#Introduction {
+  justify-content: center;
+  padding-inline-start: 40%;
+  
 }
+
+#avatar-bis {
+  margin: 0;
+  margin-top: calc(var(--gutter) * 3);
+  margin-bottom: calc(var(--gutter) * -0.3125);
+}
+menu {
+  margin-right: calc(var(--gutter) * 22);
+  display: flex;
+  margin-bottom: calc(var(--gutter) * 1);
+}
+
+
 
 .desktop {
   margin: 0;
@@ -55,11 +76,15 @@ p {
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .column {
